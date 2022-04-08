@@ -2,7 +2,7 @@ using System;
 
 public class Encryptor
 {
-    public String CryptWord(String word)
+    private String CryptWord(String word)
     {
         if (word.Contains(" "))
             throw new ArgumentException();
@@ -18,7 +18,7 @@ public class Encryptor
         return newWord;
     }
 
-    public String CryptWordToNumbers(String word)
+    private String CryptWordToNumbers(String word)
     {
         if (word.Contains(" "))
             throw new ArgumentException();
@@ -34,7 +34,7 @@ public class Encryptor
         return newWord;
     }
 
-    public String CryptWord(String word, String charsToReplace)
+    private String CryptWord(String word, String charsToReplace)
     {
         if (word.Contains(" "))
             throw new ArgumentException();
