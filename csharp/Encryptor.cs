@@ -4,7 +4,7 @@ public class Encryptor
     {
         char[] sentenceArray = sentence.ToCharArray();
         String result = "";
-        for (int i = 0; i < sentence.Length; i++)
+        for (int i = 0; i < sentenceArray.Length; i++)
         {
             int charValue = sentenceArray[i];
             result += (char) (charValue + 2);
