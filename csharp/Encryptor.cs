@@ -68,20 +68,5 @@ public class Encryptor
 
         return newWord;
     }
-
-    public String[] GetWords(String sentence)
-    {
-        return sentence.Split(' ');
-    }
-
-
-    public void PrintWords(String sentence)
-    {
-        String[] words = GetWords(sentence);
-        foreach (String word in words)
-        {
-            Console.WriteLine("<" + word + ">");
-        }
-    }
 }
 
