@@ -3,14 +3,14 @@ public class Encryptor
     public String CryptSentence(String sentence)
     {
         char[] sentenceArray = sentence.ToCharArray();
-        String newWord = "";
+        String result = "";
         for (int i = 0; i < sentence.Length; i++)
         {
             int charValue = sentenceArray[i];
-            newWord += (char) (charValue + 2);
+            result += (char) (charValue + 2);
         }
 
-        return newWord;
+        return result;
     }
 }
 
