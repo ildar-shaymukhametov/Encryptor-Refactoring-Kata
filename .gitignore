@@ -4,3 +4,6 @@ target
 **/__pycache__
 **/*.pyc
 .cache
+obj/
+.vscode/
+bin/

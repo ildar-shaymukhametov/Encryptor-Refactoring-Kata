@@ -1,13 +1,15 @@
-using System;
-using NUnit.Framework;
+using Xunit;
 
-[TestFixture]
 public class EncryptorTest
 {
-    [Test]
+    [Fact]
     public void Test()
     {
-        Assert.Fail("Not yet implemented");
+        var sentence = "This is just a test";
+        var sut = new Encryptor();
+        var actual = sut.CryptSentence(sentence);
+
+        Assert.Equal("Vjku\"ku\"lwuv\"c\"vguv", actual);
     }
 }
 

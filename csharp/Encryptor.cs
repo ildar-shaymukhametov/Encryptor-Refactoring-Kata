@@ -2,12 +2,6 @@ using System;
 
 public class Encryptor
 {
-    public static void Main(string[] args)
-    {
-        var encryptor = new Encryptor();
-        encryptor.PrintWords(encryptor.CryptSentence("This is just a test"));
-    }
-
     public String CryptWord(String word)
     {
         if (word.Contains(" "))
